@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro EmpaquesSJ</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body style="background-color: lightcyan;">
+    <p class="centrado" style="text-align: center;">
+
+        <img src="https://res.cloudinary.com/prabyc/image/upload/v1633219873/page/Logo2_wqlahu.png" alt="logo EmpaquesSJ" style="
+    border: solid;
+    border-style: outset;
+    border-color: aquamarine;">
+    </p>
+    
+    <h1 style="text-align: center;">Formulario de registro </h1>
+    <center>
+
+    <form id="form_registro_usuario"; style="background-color: azure;width: min-content;">
+        <script src="validaciones.js"></script>
+    <fieldset>
+        <legend style="color:black;font-size: larger;"> Registro</legend> 
+        
+        <label id="in_usuario" >Nombre de usuario</label>
+        <input id="in_usuario" type="text" placeholder="usuario" onchange="validar_nombreUsuario(event.target.String)">
+            
+        <label id="in_contrasena">Contraseña</label>
+        <input type="text" id="in_contrasena" placeholder="contrasena" onchange="validar_contrasena(event.target.value)">
+            <br>
+            <br>
+                        
+        <button id="btn_enviar_registro" >Enviar</button>
+    
+
+                
+    </fieldset>
+    
+    </form>
+    </center>
+
+</body>
+</html>
